@@ -21,7 +21,7 @@ This automation project captures responses from a Google Form, summarizes the fe
 ### 1. Clone this repository
 Click the green `Code` button > `Download ZIP` or use:
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/DhruvalAnandkar/google-form-feedback-summarizer/tree/main.git
 pip install openai gspread oauth2client requests
 
 ### 2. Install dependencies
