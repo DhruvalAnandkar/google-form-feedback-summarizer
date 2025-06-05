@@ -22,10 +22,13 @@ This automation project captures responses from a Google Form, summarizes the fe
 Click the green `Code` button > `Download ZIP` or use:
 
 git clone https://github.com/DhruvalAnandkar/google-form-feedback-summarizer/tree/main.git
+
 pip install openai gspread oauth2client requests
 
 ### 2. Install dependencies
-Make sure you have Python installed. Then run:
+
+Make sure you have Python installed. 
+Then run:
 pip install openai gspread oauth2client requests
 
 ### 3. Set up Google Sheets API
@@ -38,24 +41,23 @@ Create a Service Account and download the JSON key file (name it service_account
 Share your Google Sheet with the service account email (with edit access).
 
 ### 4. Update your config in the script
-Open your Python script (form_summarizer.py) and update:
+Open your Python script (summarizer.py) and update:
 
 openai.api_key = "YOUR_OPENAI_API_KEY"
 SLACK_WEBHOOK_URL = "YOUR_SLACK_WEBHOOK_URL"
 SHEET_NAME = "Your Google Sheet Name"
 
 ### 5. Run the script
-Make sure your Google Sheet contains responses from the form. Then:
-
-python form_summarizer.py
+Make sure your Google Sheet contains responses from the form. 
+Then:
+python summarizer.py
 
 💡 Example Output on Slack:
 
 📬 New Feedback Submission!
 👤 Name: Dhruval Anandkar  
-📧 Email: danandk2@ashland.edu  
+📧 Email: dhruval@gmail.com
 📝 Message: I had a great experience using your platform, but the dashboard loads slowly when I access it from my phone.  
 ⚡ Priority: High
-
 Summary: Positive feedback on platform experience, with a request to improve mobile performance.  
 Category: Follow-up
